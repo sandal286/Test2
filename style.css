@@ -1,0 +1,136 @@
+/* Основні налаштування та скидання стилів браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #1a1a1a; /* Дуже темний сірий */
+    color: #e0e0e0; /* Світло-сірий текст */
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Контейнер для центрування */
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Шапка сайту */
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    border-bottom: 2px solid #333;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #888;
+}
+
+nav a.active {
+    border-bottom: 1px solid #fff;
+}
+
+/* Основний контент */
+main {
+    padding-bottom: 60px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ccc;
+    border-left: 4px solid #555;
+    padding-left: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Плейсхолдер для зображення */
+.image-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #444;
+}
+
+/* Підвал */
+footer {
+    background-color: #000000;
+    color: #888;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: auto;
+    border-top: 2px solid #333;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #888;
+}
+
+footer a:hover {
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Стили для реальных изображений */
+.content-image {
+    width: 100%;            /* Растягивает фото на всю ширину текста */
+    height: auto;           /* Сохраняет пропорции (не сплющивает) */
+    display: block;         /* Убирает лишние отступы снизу */
+    margin: 40px 0;         /* Отступы сверху и снизу, как было у заглушки */
+    border: 1px solid #333; /* Тонкая рамка */
+    filter: grayscale(100%); /* ЭФФЕКТ: Делает фото черно-белым (стиль Рика) */
+    transition: filter 0.5s ease;
+}
+
+/* При наведении мышки возвращаем цвет (необязательно, но красиво) */
+.content-image:hover {
+    filter: grayscale(0%);
+}
